@@ -1,4 +1,4 @@
-## Techstack 
+## Techstack Used
  1. Kotlin , XML
  2. Single Activity app
  3. Fragments for navigation
