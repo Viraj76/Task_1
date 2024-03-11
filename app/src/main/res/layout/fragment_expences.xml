@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".ui.fragments.ExpensesFragment">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tbExpense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:navigationIcon="@drawable/baseline_arrow_back_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tbExpense"
+        >
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvPersonalExpense"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_170sdp"
+            android:elevation="@dimen/_5sdp"
+            app:cardUseCompatPadding="true"
+            app:cardElevation="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            app:cardCornerRadius="@dimen/_10sdp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PERSONAL EXPENSES"
+                android:textColor="@color/black"
+                android:layout_weight="0.2"
+                android:paddingHorizontal="@dimen/_5sdp"
+                android:textStyle="bold"
+                android:paddingVertical="@dimen/_28sdp"
+                android:layout_gravity="center"
+                android:textSize="@dimen/_15ssp"/>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvGroupExpense"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_170sdp"
+            android:elevation="@dimen/_5sdp"
+            app:cardUseCompatPadding="true"
+            android:layout_marginTop="@dimen/_15sdp"
+            app:cardElevation="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            app:cardCornerRadius="@dimen/_10sdp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GROUP EXPENSES"
+                android:textColor="@color/black"
+                android:layout_weight="0.2"
+                android:paddingHorizontal="@dimen/_5sdp"
+                android:textStyle="bold"
+                android:paddingVertical="@dimen/_28sdp"
+                android:layout_gravity="center"
+                android:textSize="@dimen/_15ssp"/>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
